@@ -88,7 +88,7 @@ if (isset($_POST['simpan'])) {
 <head>
     <title>Ajukan Peminjaman</title>
 
-    <link rel="stylesheet" href="../../../public/css/style.css">
+    <link rel="stylesheet" href="../../../public/css/style.css?v=3">
 
     <style>
         .form-box {
