@@ -71,7 +71,7 @@ if (isset($_POST['login'])) {
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/style.css?v=3">
 
     <style>
         .login-box {
