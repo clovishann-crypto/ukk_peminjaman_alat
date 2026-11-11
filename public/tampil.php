@@ -16,7 +16,7 @@ $data = $conn->query($query);
 <head>
     <title>Data Alat</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=3">
 
     <style>
         .data-table {
