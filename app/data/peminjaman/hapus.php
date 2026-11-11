@@ -1,3 +1,4 @@
+
 <?php
 
 include "../../config/connection.php";
@@ -19,25 +20,12 @@ if (!$row_cek) {
 
 $status = $row_cek['status'];
 
-// Kalau masih dipinjam, ambil detail untuk mengembalikan stok
+// Jika masih dipinjam, proses hapus dibatalkan
 if ($status == 'Dipinjam') {
-
-    $query_detail = "SELECT id_alat, jumlah
-                     FROM detail_peminjaman
-                     WHERE id_peminjaman = '$id'";
-
-    $data_detail = $conn->query($query_detail);
-
-    while ($detail = $data_detail->fetch_assoc()) {
-
-        $id_alat = $detail['id_alat'];
-        $jumlah = $detail['jumlah'];
-
-        $conn->query("UPDATE alat
-                      SET stok = stok + $jumlah
-                      WHERE id_alat = '$id_alat'");
-    }
+    echo "Data tidak bisa dihapus karena alat masih dipinjam.";
+    exit;
 }
+
 
 // Hapus transaksi terlebih dahulu
 $query_transaksi = "DELETE transaksi
