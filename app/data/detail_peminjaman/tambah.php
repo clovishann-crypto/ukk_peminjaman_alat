@@ -143,7 +143,7 @@ $row = $data->fetch_assoc();
 
     <title>Edit Detail Peminjaman</title>
 
-    <link rel="stylesheet" href="../../../public/css/style.css">
+    <link rel="stylesheet" href="../../../public/css/style.css?v=3">
 
     <style>
         form {
