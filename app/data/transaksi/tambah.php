@@ -54,7 +54,7 @@ if (isset($_POST['simpan'])) {
 
     <title>Tambah Data Transaksi</title>
 
-    <link rel="stylesheet" href="/ProjectUKK/public/css/style.css?v=2">
+    <link rel="stylesheet" href="/ProjectUKK/public/css/style.css?v=3">
 
 </head>
 
