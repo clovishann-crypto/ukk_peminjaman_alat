@@ -27,7 +27,7 @@ $data = $conn->query($query);
 <head>
     <title>Laporan Peminjaman</title>
 
-    <link rel="stylesheet" href="/ProjectUKK/public/css/style.css">
+    <link rel="stylesheet" href="/ProjectUKK/public/css/style.css?v=3">
 
     <style>
         body {
